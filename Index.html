@@ -1,144 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Som Da Vida||Turning life into Music</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
-    <style>
-      a{
-        text-decoration: none;
-        color: black;
-      }
-      a:hover{
-        color: purple;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Som Da Vida || Turning Life into Music</title>
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f8f8;
+      color: #222;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: purple;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 120px 20px 60px;
+      background-color: rgba(255, 255, 255, 0.85);
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 480px;
+      border-radius: 14px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .hero-text {
+      flex: 1;
+      padding: 20px;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .hero-text h1 {
+      color: purple;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .buttons a {
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary {
+      background-color: purple;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: #5a2c5a;
+    }
+
+    .btn-outline {
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+    }
+
+    .btn-outline:hover {
+      background-color: black;
+      color: white;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end;
       }
-      #upperbody{
-        margin-top: 100px;
-        background-color: rgba(255, 255, 255, 0.826)
+
+      .hero {
+        flex-direction: column;
       }
-      #b1{
-        background-color: white;
-        color: black;
-        border-radius: 4px;
-        padding: 3px;
-        border: solid,1px,black;
+
+      .hero-text h1 {
+        font-size: 20px;
       }
-      #b1:hover{
-        background-color: rgb(174, 90, 174);
-        color: white;
+
+      .hero-text p {
+        font-size: 15px;
       }
-      #b2{
-        background-color: rgb(174, 90, 174);
-        color: white;
-        border-radius: 4px;
-        padding: 5px;
-        border: solid,1px,black;
-      }
-      #b2:hover{
-        background-color: white;
-        color: black;
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="navbar bg-body-tertiary fixed-top">
-  <div class="container-fluid">
-    <img class="navbar-brand" src="Images/som-da-vida logo.png" style="width: 60px; height: 60px; border-radius: 50px;">
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <img src="Images/som-da-vida logo.png" alt="Som da Vida Logo">
+    <ul>
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="company.html">About Us</a></li>
+      <li><a href="portofolio.html">Portfolio</a></li>
+      <li><a href="careers.html">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <section class="hero">
+    <img src="Images/Dada.jpg" alt="Wadada Hilda">
+    <div class="hero-text">
+      <h1><b>Wadada Hilda – Founder & Creative Director | Som Da Vida</b></h1>
+      <p>I’m Wadada Hilda — a DJ, culture curator, and the proud founder of Som Da Vida (est. 2025). Rooted in dancehall and raised on raw vibes, I built this platform to give real talent a real shot — no shortcuts, just strategy, purpose, and passion.</p>
+      <div class="buttons">
+        <a href="https://www.instagram.com/dvjdada/?__pwa=1" class="btn-outline">Instagram</a>
       </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="company.html">About Us</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              More Info
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="portofolio.html">Portifolio</a></li>
-              <li><a class="dropdown-item" href="careers.html">Register</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex mt-3" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
     </div>
-  </div>
-  <br><br><br>
-</nav>
-<div id="upperbody">
-  </div>
-    <div class="container text-center">
-      <div class="row">
-        <div class="col">
-          <img
-            src="Images/Dada.jpg"
-            alt="Dee"
-            height="500px"
-            width="500px"
-            class="paragragh"
-            style="border-radius: 14px"
-          /><br />
-        </div>
-        <div class="col">
-         <h1 style="margin-top: 130px; color:purple;" ><b>Wadada Hilda-Founder & Creative Director | Som Da Vida</b></h1>
-         <p>I’m Wadada Hilda a DJ, culture curator, and the proud founder of Som
-            Da Vida, established in 2025. Rooted in dancehall and raised on raw
-            vibes, I built this platform to give real talent a real shot no
-            shortcuts, just strategy, purpose, and passion.</p>
-            <div class="container text-center">
-  <div class="row">
-    <div class="col">
-     <button id="b1"><a href="https://www.instagram.com/dvjdada/?__pwa=1">Instagram</a></button>
-    </div>
-    <div class="col">
-      <button id="b2">Twitter</button>
-    </div>
-  </div>
-</div>
-        </div>
-      </div>
-    </div>
-</div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"
-    ></script>
-    
-  </body>
+  </section>
+
+</body>
 </html>
-
- <!-- <br /><br />
-            As a DJ with a bold presence and a sharp ear, I’ve always connected
-            deeply to the rhythm of the streets and the power of sound. I
-            created this company not just to manage artists, but to guide them
-            to turn raw energy into direction, and dreams into legacy.<br /><br />
-            My role is hands-on: I lead creative strategy, artist development,
-            event planning, and branding. From the studio to the stage, I’m all
-            about pushing culture forward with loyalty, vision, and a team-first
-            mindset.<br /><br />
-            This is more than a company. It’s a movement and we’re just getting
-            started. -->

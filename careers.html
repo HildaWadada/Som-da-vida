@@ -1,53 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For new Talants</title>
-    <link rel="stylesheet" href="/CSS/careers.css">
-</head>
-<body style="background-color: rgba(245, 245, 245, 0.486);">
-    <a href="Index.html">PROFILE</a>
-    <h1>Application Form New Interested Talents</h1>
-    <p>Here, we offer opportunities to individuals out there that maight be interested to join our team to contribute their skills so that we can grow together,<br> build something impactfull, and push the culture forward.</p>
-    
-    <div class="form-box">
-    <form>
-        <h2>Please provide us with the following infomation ;</h2>
-        <label for="Name" ><b>First Name</b></label>
-        <input type="text" id="First Name"><br><br>
-        <label for="Name" ><b>Last Name</b></label>
-        <input type="text" id="Last Name"><br><br>
-        <label for="Email"><b>Email</b></label>
-        <input type="Email" id="Email"><br><br>
-        <label for="Contact"><b>Contact</b></label>
-        <input type="Contact" id="Contact"><br><br>
-        <label for="Lookbook"><b>Lookbook</b></label>
-        <input type="URL" id="URL"><br><br>
-                <label for="Location"><b>Location</b></label>
-        <input type="Location" id="Location"><br><br>
-        <label><b>Gender</b></label><br><br>
-        <input type="Radio" name="Gender" value="Female" id="Female">
-        <label for="Female">Female</label><br><br>
-        <input type="Radio" name="Gender" value="Male" id="Male">
-        <label for="Male">Male</label><br><br>
-        <label for="Career interest"><b>Career interest </b></label><br><br>
-        <input type="checkbox" id="Web & Digital Manager">
-        <label for="Web & Digital Manager">Web & Digital Manager</label><br><br>
-        <input type="checkbox" id="Content creater">
-        <label for="Content creator">Content creator</label><br><br>
-        <input type="checkbox" id="DJ">
-        <label for="DJ">DJ</label><br><br>
-        <input type="checkbox" id="Tour Manager">
-        <label for="Tour Manager">Tour Manger</label><br><br>
-        <input type="checkbox" id="Creative Director">
-        <label for="Creative Director">Creative Director</label><br><br>
-        <input type="checkbox" id="Music Publicist">
-        <label for="Music Publicist">Music Publicist</label><br><br>
-        <button type="submit">Send</button>
-    </form>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For New Talents | Som Da Vida</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    
-    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+      padding-top: 80px;
+    }
+
+    nav {
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: purple;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 26px;
+      color: purple;
+    }
+
+    p {
+      text-align: center;
+      margin: 10px auto 30px;
+      max-width: 800px;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .form-box {
+      background-color: #fff;
+      padding: 30px;
+      margin: auto;
+      max-width: 800px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    form h2 {
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+
+    button {
+      margin-top: 30px;
+      background-color: purple;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #5a2c5a;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end;
+      }
+
+      .form-box {
+        padding: 20px;
+        margin: 20px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <img src="Images/som-da-vida logo.png" alt="Som da Vida Logo" />
+    <ul>
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="company.html">About Us</a></li>
+      <li><a href="portofolio.html">Portfolio</a></li>
+      <li><a href="careers.html">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Title & Description -->
+  <h1>Application Form – New Talents</h1>
+  <p>
+    We offer opportunities to individuals who want to join our team, contribute their skills, grow together, build something impactful, and push the culture forward.
+  </p>
+
+  <!-- Form Section -->
+  <div class="form-box">
+    <form>
+      <h2>Tell us more about you</h2>
+
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" name="firstName" required />
+
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="lastName" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="contact">Contact</label>
+      <input type="tel" id="contact" name="contact" />
+
+      <label for="lookbook">Lookbook (link)</label>
+      <input type="url" id="lookbook" name="lookbook" />
+
+      <label for="location">Location</label>
+      <input type="text" id="location" name="location" />
+
+      <label>Gender</label>
+      <label for="female">Female</label>
+      <input type="radio" id="female" name="gender" value="Female" />
+      <label for="male">Male</label>
+      <input type="radio" id="male" name="gender" value="Male" />
+
+      <label>Career Interests</label>
+      <input type="checkbox" id="web" name="career" value="Web & Digital Manager" />
+      <label for="web">Web & Digital Manager</label>
+
+      <input type="checkbox" id="content" name="career" value="Content Creator" />
+      <label for="content">Content Creator</label>
+
+      <input type="checkbox" id="dj" name="career" value="DJ" />
+      <label for="dj">DJ</label>
+
+      <input type="checkbox" id="tour" name="career" value="Tour Manager" />
+      <label for="tour">Tour Manager</label>
+
+      <input type="checkbox" id="creative" name="career" value="Creative Director" />
+      <label for="creative">Creative Director</label>
+
+      <input type="checkbox" id="publicist" name="career" value="Music Publicist" />
+      <label for="publicist">Music Publicist</label>
+      
+
+      <button type="submit">Send Application</button>
+    </form>
+  </div>
+
 </body>
 </html>

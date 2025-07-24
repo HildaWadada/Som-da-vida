@@ -1,32 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample projects</title>
-    <link rel="stylesheet" href="/CSS/portofolio.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sample Projects | Som da Vida</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdf7fd;
+      color: #222;
+      padding-top: 70px;
+    }
+    
+    nav {
+      background-color: #fff;
+      color: #fff;
+      padding: 12px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+    }
+
+   nav img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      text-align: center;
+      color: purple;
+      margin-bottom: 30px;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .image-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .image-grid img:hover {
+      transform: scale(1.03);
+    }
+
+    .back-link {
+      display: inline-block;
+      background-color: #000;
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      margin-left: 600px;
+      text-decoration: none;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-link:hover {
+      background-color: #444;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 26px;
+      }
+
+      .back-link {
+        font-size: 14px;
+        padding: 14px 14px;
+        align-content: center;
+      }
+    }
+  </style>
 </head>
 <body>
-    <a href="careers.html"> JOIN US</a>
-    <div class="image-grid" >
-        <img src="Images/Business club Gala.jpg" alt="BCG" width ="300px" height="200px">
-        <img src="Images/conference.jpg" alt="conf" width="300px" height="200px">
-        <img src="Images/before gig.jpg" alt="BG" width="300px" height="200px">
-        <img src="Images/cop.jpg" alt="C" width="300px" height="200px">
-        <img src="Images/set.jpg" alt="S" width="300px" height="200px"> 
-        <img src="Images/Band.jpg" alt="B"width="300px" height="200px"> 
-        <img src="Images/stage.jpg" alt="S" width="300px" height="200px"> 
-        <img src="Images/concert.jpg" alt="J" width="300px" height="200px"> 
-        <img src="Images/Appearance.jpg" alt="A" width="300px" height="200px"> 
-        <img src="Images/stage.jpg" alt="S" width="300px" height="200px"> 
-        <img src="Images/Tania.jpg" alt="T" width="300px" height="200px"> 
-        <img src="Images/Water.jpg" alt="W" width="300px" height="200px"> 
-        <img src="Images/Feast.jpg" alt="F"width="300px" height="200px"> 
-        <img src="Images/Age.jpg" alt="Age" width="300px" height="200px">
-        <img src="Images/wooo.jpg" alt="woo" width="300px" height="200px">
-        <img src="Images/eee.jpg" alt="e" width="300px" height="200px">
+
+  <!-- Navigation -->
+   <nav>
+    <img src="Images/som-da-vida logo.png" alt="Som da Vida Logo">
+    <ul>
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="company.html">About Us</a></li>
+      <li><a href="portofolio.html">Portfolio</a></li>
+      <li><a href="careers.html">Register</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <a href="careers.html" class="back-link"> JOIN US</a>
+    <h1>Sample Projects</h1>
+
+    <div class="image-grid">
+      <img src="Images/Business club Gala.jpg" alt="Business Club Gala">
+      <img src="Images/conference.jpg" alt="Conference Event">
+      <img src="Images/cop.jpg" alt="Performance at COP">
+      <img src="Images/set.jpg" alt="DJ Setup">
+      <img src="Images/Band.jpg" alt="Band Performance">
+      <img src="Images/stage.jpg" alt="Live Stage Setup">
+      <img src="Images/concert.jpg" alt="Concert Vibes">
+      <img src="Images/Appearance.jpg" alt="Special Guest Appearance">
+      <img src="Images/stage.jpg" alt="Lighting and Stage Design">
+      <img src="Images/Tania.jpg" alt="DJ Tania on Decks">
+      <img src="Images/Water.jpg" alt="Outdoor Water Vibe">
+      <img src="Images/Feast.jpg" alt="Cultural Feast Setup">
+      <img src="Images/Age.jpg" alt="All Ages Welcome Moment">
+      <img src="Images/wooo.jpg" alt="Hyped Crowd">
+      <img src="Images/eee.jpg" alt="Energetic Performance">
     </div>
- 
-    
+  </main>
+
 </body>
 </html>
